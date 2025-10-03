@@ -8,6 +8,7 @@
     "dev": "pnpm -r dev"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "@types/node": "^24.6.1",
     "@types/yargs": "^17.0.33",
     "rimraf": "^5.0.10",
