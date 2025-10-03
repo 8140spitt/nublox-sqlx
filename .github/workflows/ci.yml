@@ -29,8 +29,8 @@ jobs:
         run: pnpm lint || true   # won’t fail build until we add eslint config
 
       - name: Typecheck
-        run: pnpm -r exec tsc -p tsconfig.json --noEmit
-
+        run: pnpm -r --filter "./packages/*" exec tsc -p tsconfig.json --noEmit
+        
       - name: Build all packages
         run: pnpm -r build
 
