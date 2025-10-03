@@ -1,0 +1,10 @@
+export * from './ddl/emit.mysql';
+export * from './dialect/print.util';
+export * from './dialect/print.expr';
+export * from './dialect/print.dml';
+export * from './dialect/print.dql';
+export * from './dialect/print.dcl';
+export * from './dialect/print.tcl';
+export * from './probe/capabilities.mysql';
+export * from './explain/normalize.mysql';
+export * from './introspect/mysql'; // <-- add this line

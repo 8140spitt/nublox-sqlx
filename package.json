@@ -1,0 +1,16 @@
+{
+  "name": "nublox-sqlx-monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rimraf pnpm -r build",
+    "clean": "rimraf node_modules pnpm-lock.yaml && pnpm install",
+    "dev": "pnpm -r dev"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.1",
+    "@types/yargs": "^17.0.33",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.9.3"
+  }
+}

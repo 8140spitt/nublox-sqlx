@@ -1,0 +1,11 @@
+{
+  "name": "mysql-quickstart",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@nublox/sqlx-core": "workspace:*",
+    "@nublox/sqlx-mysql": "workspace:*",
+    "@nublox/sqlx-runner": "workspace:*",
+    "mysql2": "^3.9.7"
+  }
+}

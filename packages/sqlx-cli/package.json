@@ -1,0 +1,26 @@
+{
+  "name": "@nublox/sqlx-cli",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "bin": {
+    "sqlx": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@nublox/sqlx-core": "workspace:*",
+    "@nublox/sqlx-mysql": "workspace:*",
+    "@nublox/sqlx-runner": "workspace:*",
+    "yargs": "^17.7.2",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/yargs": "^17.0.32",
+    "rimraf": "^5.0.10"
+  }
+}
