@@ -23,4 +23,5 @@ __exportStar(require("./dialect/print.dcl"), exports);
 __exportStar(require("./dialect/print.tcl"), exports);
 __exportStar(require("./probe/capabilities.mysql"), exports);
 __exportStar(require("./explain/normalize.mysql"), exports);
-__exportStar(require("./introspect/mysql"), exports); // <-- add this line
+__exportStar(require("./introspect/mysql"), exports);
+__exportStar(require("./probe/advisors.mysql"), exports); // <-- add this line

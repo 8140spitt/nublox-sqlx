@@ -8,3 +8,4 @@ export * from './dialect/print.tcl';
 export * from './probe/capabilities.mysql';
 export * from './explain/normalize.mysql';
 export * from './introspect/mysql';
+export * from './probe/advisors.mysql';

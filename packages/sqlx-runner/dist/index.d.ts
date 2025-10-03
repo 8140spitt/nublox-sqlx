@@ -1,12 +1,8 @@
-export interface ApplyOptions {
+import type { Plan } from '@nublox/sqlx-core';
+export type Exec = (sql: string, params?: any[]) => Promise<any>;
+export declare function applyPlan(exec: Exec, plan: Plan, opts?: {
     dryRun?: boolean;
     lock?: boolean;
     resume?: boolean;
-    tag?: string;
-}
-export declare function applyPlan(exec: (sql: string, params?: any[]) => Promise<{
-    rows: any[];
-}>, statements: string[], opts?: ApplyOptions): Promise<{
-    planHash: string;
-    executed: number;
-}>;
+    confirmHash?: string;
+}): Promise<void>;

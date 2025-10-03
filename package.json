@@ -15,5 +15,10 @@
     "prettier-plugin-svelte": "2.10.1",
     "rimraf": "^5.0.10",
     "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
