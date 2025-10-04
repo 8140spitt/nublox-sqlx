@@ -1,7 +1,7 @@
 // apps/studio/src/routes/api/sqlx/introspect/+server.ts
 import type { RequestHandler } from '@sveltejs/kit';
 import { introspectMySQL } from '@nublox/sqlx-mysql';
-import { getExecForConn } from '$lib/server/sqlx-exec';
+import { getExecForConn } from '$lib/server/db';
 
 export const POST: RequestHandler = async ({ request }) => {
     const { url } = await request.json();

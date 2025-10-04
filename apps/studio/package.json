@@ -44,6 +44,8 @@
 		"@nublox/sqlx-core": "workspace:*",
 		"@nublox/sqlx-mysql": "workspace:*",
 		"@nublox/sqlx-runner": "workspace:*",
+		"@nublox/sqlx-client": "workspace:*",
+		"@nublox/sqlx-driver-mysql-wire": "workspace:*",
 		"mysql2": "^3.10.0"
 	}
 }
