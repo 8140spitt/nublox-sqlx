@@ -24,3 +24,5 @@ __exportStar(require("./ir/tcl"), exports);
 __exportStar(require("./plan/capabilities"), exports);
 __exportStar(require("./plan/planner"), exports);
 __exportStar(require("./util/hash"), exports);
+__exportStar(require("./diff/diff"), exports);
+__exportStar(require("./util/hash"), exports);

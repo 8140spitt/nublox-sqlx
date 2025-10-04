@@ -8,3 +8,6 @@ export * from './ir/tcl';
 export * from './plan/capabilities';
 export * from './plan/planner';
 export * from "./util/hash";
+export * from './diff/diff';
+export * from './util/hash';
+

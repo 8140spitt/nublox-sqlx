@@ -31,6 +31,19 @@ importers:
         version: 5.9.3
 
   apps/studio:
+    dependencies:
+      '@nublox/sqlx-core':
+        specifier: workspace:*
+        version: link:../../packages/sqlx-core
+      '@nublox/sqlx-mysql':
+        specifier: workspace:*
+        version: link:../../packages/sqlx-mysql
+      '@nublox/sqlx-runner':
+        specifier: workspace:*
+        version: link:../../packages/sqlx-runner
+      mysql2:
+        specifier: ^3.10.0
+        version: 3.15.1
     devDependencies:
       '@eslint/compat':
         specifier: ^1.4.0

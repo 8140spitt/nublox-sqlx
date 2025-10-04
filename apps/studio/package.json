@@ -39,5 +39,11 @@
 		"vite": "^7.1.7",
 		"vitest": "^3.2.4",
 		"vitest-browser-svelte": "^1.1.0"
+	},
+	"dependencies": {
+		"@nublox/sqlx-core": "workspace:*",
+		"@nublox/sqlx-mysql": "workspace:*",
+		"@nublox/sqlx-runner": "workspace:*",
+		"mysql2": "^3.10.0"
 	}
 }
