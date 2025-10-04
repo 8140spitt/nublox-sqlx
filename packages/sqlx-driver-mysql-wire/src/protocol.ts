@@ -1,0 +1,42 @@
+// Subset of capability flags we actually use
+export const CAP = {
+    LONG_PASSWORD: 0x00000001,
+    LONG_FLAG: 0x00000004,
+    TRANSACTIONS: 0x00002000,
+    PROTOCOL_41: 0x00000200,
+    SECURE_CONNECTION: 0x00008000,
+    PLUGIN_AUTH: 0x00080000,
+    MULTI_RESULTS: 0x00020000,
+    DEPRECATE_EOF: 0x01000000,
+    SSL: 0x0800
+} as const;
+
+export const DEFAULT_CAP =
+    CAP.LONG_PASSWORD |
+    CAP.LONG_FLAG |
+    CAP.TRANSACTIONS |
+    CAP.PROTOCOL_41 |
+    CAP.SECURE_CONNECTION |
+    CAP.PLUGIN_AUTH |
+    CAP.MULTI_RESULTS |
+    CAP.DEPRECATE_EOF;
+
+export const CMD = {
+    QUIT: 0x01,
+    QUERY: 0x03,
+    STMT_PREPARE: 0x16,
+    STMT_EXECUTE: 0x17,
+    STMT_CLOSE: 0x19,
+    PING: 0x0e
+} as const;
+
+export const FIELD_TYPES = {
+    DECIMAL: 0x00, TINY: 0x01, SHORT: 0x02, LONG: 0x03, FLOAT: 0x04, DOUBLE: 0x05,
+    NULL: 0x06, TIMESTAMP: 0x07, LONGLONG: 0x08, INT24: 0x09, DATE: 0x0a, TIME: 0x0b,
+    DATETIME: 0x0c, YEAR: 0x0d, VARCHAR: 0x0f, BIT: 0x10, JSON: 0xf5, NEWDECIMAL: 0xf6,
+    ENUM: 0xf7, SET: 0xf8, TINY_BLOB: 0xf9, MEDIUM_BLOB: 0xfa, LONG_BLOB: 0xfb, BLOB: 0xfc,
+    VAR_STRING: 0xfd, STRING: 0xfe, GEOMETRY: 0xff
+} as const;
+
+// Helpers
+export const NULL_LENGTH = 0xfb;
